@@ -44,7 +44,7 @@ router.put("/:id",
     isLoggedIn,
     isOwner,
     upload.single("listing[image]"),
-    // validateListing,
+    validateListing,
     wrapAsync (listingController.updateListing));
 
 //Delete route
